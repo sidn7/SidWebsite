@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+section {
+  scroll-margin-top: 100px; /* Adjust this value based on your header height */
+}
+

@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 140px;
+  background-color: #fff;
+  color: #667;
+  transition: transform 0.5s ease-in-out; /* Increase duration and use ease-in-out */
+  box-shadow: 100px 100px rgba(0, 0, 0, 0);
+  position:fixed;
+  z-index: 1000; /* Keeps header above other content */
+
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: 'Great Vibes',cursive;
+}
+
+.nav a {
+  margin-left: 155px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #667;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, opacity 1s ease, text-decoration 0.3s ease-in-out; /* Smooth transition for color and opacity */
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: darkkhaki;
+  opacity: 0.4;
+}
+
+/* Dim the non-hovered links */
+.nav a:not(:hover) {
+  opacity: 1; /* Dim non-hovered links */
+}
+
+.hidden {
+  transform: translateY(-100%); /* Moves header out of view */
+}
+
+html {
+  scroll-behavior: smooth;
+}

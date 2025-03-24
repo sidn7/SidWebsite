@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Contact Me</h2>
+  <div class="contact-box">
+    <p>I'd love to hear from you! Feel free to reach out through the form below or connect with me on social media.</p>
+
+    <form (ngSubmit)="onSubmit()">
+      <input [(ngModel)]="contact.name" name="name" id="name" type="text" placeholder="Your Name" required />
+      <input [(ngModel)]="contact.email" name="email" id="email" type="email" placeholder="Your Email" required />
+      <textarea [(ngModel)]="contact.message" name="message" id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <div *ngIf="responseMessage" class="response-message">
+    {{ responseMessage }}
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Siddhant Ashutosh. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/siddhant-ashutosh" target="_blank"> LinkedIn</a>
+      <a href="https://www.instagram.com/sid_n7/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/siddhant.ashutosh" target="_blank">Facebook</a>
+    </div>
+  </footer>
+</div>

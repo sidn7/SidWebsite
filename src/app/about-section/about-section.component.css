@@ -1,0 +1,59 @@
+
+.about-content {
+  margin: auto;
+}
+
+.about-section {
+  display: flex;
+  max-width: 1320px;
+  margin: auto;
+  transition: opacity 0.2s ease, transform 0.6s ease;
+
+
+}
+
+.about-photo {
+  /* Set a fixed width for the photo container */
+  width: 120px; /* Adjust width as needed */
+  max-width: 150px;
+
+}
+
+.about-photo img {
+  width: 280px;  /* Make the image fill the container */
+  height: 430px;
+  background-image: url('../../assets/profile7.jpg');
+}
+
+.about-me {
+  flex: 2;
+  margin-left:180px;
+}
+
+.about-me h2 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #667;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
+.about-me p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #667;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-photo {
+    margin: 0 0 20px 0;
+  }
+}
+
+

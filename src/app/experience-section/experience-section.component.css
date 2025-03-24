@@ -1,0 +1,86 @@
+/* work-experience.component.css */
+.work-experience-home {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+
+}
+
+.work-experience-section {
+  max-width: 1250px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  padding-top: 80px;
+
+}
+
+.work-experience-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #667;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  font-size: 2rem;
+
+}
+
+.work-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:55px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4CAF50; /* Green background for the symbol */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.date {
+  font-size: 19px;
+  font-weight: bold;
+  color: #667;
+  margin-bottom: 5px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #667;
+  margin: 5px 0;
+}
+
+.company {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #667;
+}
+
+/* Card Hover Effect */
+.work-block:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
