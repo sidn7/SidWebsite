@@ -1,74 +1,64 @@
-/* Section Heading */
-.section-heading {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 30px;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 2px;
-  color: #667; /* Dark gray color for readability */
-}
-
-/* Education Section Container */
 .education-section {
-  padding: 15px 20px;
-  background-color: white;
-  margin-top: 15px;
-  transition: opacity 0.2s ease, transform 0.3s ease;
-  background: linear-gradient(to right, #f8f9fa, #e9ecef);
-
+  text-align: center;
 }
 
-/* Card Container for side-by-side alignment */
-.card-container {
+.education-container {
   display: flex;
-  gap: 20px;
-  justify-content: center; /* Centers the cards horizontally */
-  align-items: flex-start; /* Aligns cards to the top */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between each education entry */
 }
 
-/* Card Styling */
-.education-card {
-  flex: 1;
-  max-width: 500px;
-  padding: 20px;
-  background-color: #f7f7f7; /* Light gray background */
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: #667; /* Dark gray for readability on light background */
-  transition: transform 0.3s ease;
+.section-heading {
+  color: #CCCCCC;
+  font-size: 35px;
+
+}
+.education-item {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  gap: 50px; /* Space between year and details */
 }
 
-/* Card Hover Effect */
-.education-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Card title and subtitle styling */
-.card-title {
-  font-size: 1.5rem;
+.education-year {
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 10px;
+  min-width: 150px;
+  text-align: right;
+  color: #CCCCCC;
+  flex-shrink: 0;
 }
 
-.card-subtitle {
-  font-size: 1.1rem;
-  color: #667;
-  margin-bottom: 15px;
+.education-details {
+  text-align: left;
+  flex: 1;
 }
 
-/* Card text styling */
-.card-text {
-  font-size: 1.1em;
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between date and university */
+  color: #CCCCCC;
+}
+
+.university {
+  font-size: 14px;
+  font-weight: bold;
+  color: #CCCCCC;
+  white-space: nowrap; /* Prevents university name from wrapping */
+}
+
+.degree {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #CCCCCC;
+}
+
+p {
+  margin-top: 5px;
+  color: #CCCCCC;
   line-height: 1.5;
-
-}
-
-/* Responsive Design for Small Screens */
-@media (max-width: 768px) {
-  .card-container {
-    flex-direction: column; /* Stacks cards vertically on smaller screens */
-  }
 }

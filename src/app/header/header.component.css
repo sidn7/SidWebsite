@@ -3,12 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 140px;
-  background-color: #fff;
-  color: #667;
+  --background-color: #fff;
+  color: #CCCCCC;
   transition: transform 0.5s ease-in-out; /* Increase duration and use ease-in-out */
   box-shadow: 100px 100px rgba(0, 0, 0, 0);
   position:fixed;
-  z-index: 1000; /* Keeps header above other content */
+  --z-index: 1000; /* Keeps header above other content */
 
 }
 
@@ -27,7 +27,7 @@
   margin-left: 155px;
   text-decoration: none;
   font-size: 23px;
-  color: #667;
+  color: #CCCCCC;
   font-weight: bold;
   transition: color 0.3s ease-in-out, opacity 1s ease, text-decoration 0.3s ease-in-out; /* Smooth transition for color and opacity */
   opacity: 1;

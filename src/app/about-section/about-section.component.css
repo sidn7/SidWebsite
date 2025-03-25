@@ -33,7 +33,7 @@
 .about-me h2 {
   margin: 0;
   font-size: 1.8em;
-  color: #667;
+  color: pink;
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-thickness: 2px;
@@ -42,7 +42,7 @@
 .about-me p {
   font-size: 1.1em;
   line-height: 1.6;
-  color: #667;
+  color: #CCCCCC;
 }
 
 /* Responsive adjustments */

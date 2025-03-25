@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
+  --background-color: #f8f9fa;
   margin: 0;
   padding: 0;
 }
@@ -20,7 +20,7 @@ html, body {
   transition: transform 0.3s ease;
   text-align: center;
   padding-top: 80px;
-  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  --background: linear-gradient(to right, #f8f9fa, #e9ecef);
 
 
 }
@@ -28,7 +28,7 @@ html, body {
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #667;
+  color: pink;
   margin-bottom: 20px;
   text-decoration: underline;
   text-underline-offset: 5px;
@@ -36,7 +36,7 @@ h2 {
 }
 
 .contact-box {
-  background: white;
+  --background: white;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@ button:hover {
 footer {
   margin-top: 40px;
   text-align: center;
-  background-color: rgba(170, 194, 194, 0.6);
+  background-color: rgb(237, 188, 188);
   color: white;
   padding: 20px;
   width: 100%;
