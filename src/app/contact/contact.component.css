@@ -28,9 +28,9 @@ html, body {
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: pink;
+  color: #F96857;
   margin-bottom: 20px;
-  text-decoration: underline;
+  --text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-thickness: 2px;
 }
@@ -42,12 +42,12 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
-  border: 1px solid #ccc;
+  border: 0.5px solid #ccc;
 }
 
 p {
   font-size: 18px;
-  color: #667;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@ input, textarea {
 
 button {
   padding: 12px;
-  background-color: #007bff;
+  background-color: #0056b3;
   color: white;
   border: none;
   border-radius: 5px;
@@ -74,13 +74,13 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #007bff;
 }
 
 footer {
   margin-top: 40px;
   text-align: center;
-  background-color: rgb(237, 188, 188);
+  background-color: #F96857;
   color: white;
   padding: 20px;
   width: 100%;
@@ -96,7 +96,7 @@ footer {
 .social-links a {
   text-decoration: none;
   font-weight: bold;
-  color: #667;
+  color: white;
   transition: color 0.3s ease;
 }
 
@@ -110,15 +110,16 @@ footer {
   text-align: center;
   border-radius: 5px;
   font-size: 18px;
+  color: #CCCCCC;
 }
 
 .response-message.success {
-  background-color: #d4edda;
-  color: #667;
+  --background-color: #d4edda;
+  color: #CCCCCC;
 }
 
 .response-message.error {
-  background-color: #f8d7da;
-  color: #667;
+  --background-color: #f8d7da;
+  color: #CCCCCC;
 }
 

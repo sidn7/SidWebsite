@@ -33,9 +33,10 @@
 .about-me h2 {
   margin: 0;
   font-size: 1.8em;
-  color: pink;
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  color: #F96857;
+  text-align: center;
+  --text-decoration: underline;
+  --text-underline-offset: 5px;
   text-decoration-thickness: 2px;
 }
 

@@ -15,7 +15,7 @@ export class ExperienceSectionComponent {
       description: 'Experienced in developing and maintaining Java-based applications using Spring Boot. Skilled in building and optimizing microservices architecture, with expertise in RESTful APIs, SOAP web services, and GraphQL. Strong knowledge of backend development, including database integration, security, and performance optimization'
     },
     {
-      date: 'Janurary 2021 - September 2022',
+      date: 'January 2021 - September 2022',
       location: 'Halifax, Canada',
       title: 'IT Developer',
       company: 'Canada Revenue Agency',

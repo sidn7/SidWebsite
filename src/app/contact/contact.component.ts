@@ -42,7 +42,7 @@ export class ContactComponent {
     emailjs.send('service_sfmawnf', 'template_d6qtpdb', templateParams,'wHnvrSZikrJT977Za')
       .then((response) => {
         console.log('Email sent successfully:', response);
-        this.responseMessage = 'Your message was sent successfully! Thank you for reaching out!';
+        this.responseMessage = 'Your message was sent successfully. Thank you for reaching out!';
         this.clearForm()
       })
       .catch((error) => {
