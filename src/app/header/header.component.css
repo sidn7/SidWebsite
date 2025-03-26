@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   background-color: #F96857;
   transition: transform 0.5s ease-in-out;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -84,8 +84,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
     text-align: center;
-    padding: 20px 0;
-    margin-left: 0
+    --padding: 20px 0;
   }
 
   .nav a {
