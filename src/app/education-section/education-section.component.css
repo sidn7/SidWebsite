@@ -108,6 +108,7 @@ p {
     flex-direction: column; /* Stack on smaller screens */
     align-items: center;
     text-align: center;
+    background: cover;
     gap: 10px;
   }
 

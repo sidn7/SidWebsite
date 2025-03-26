@@ -69,7 +69,7 @@ h2, h3 {
   .body-content {
     background-size: cover;
     width: 100%;
-    height: auto; /* Allow content to adapt to content height */
+    height: 250px; /* Allow content to adapt to content height */
     padding: 10px; /* Add padding to prevent content touching edges */
   }
 }
@@ -81,12 +81,12 @@ h2, h3 {
   }
 
   .title {
-    font-size: 2.5em; /* Adjust title font size */
+    font-size: 2.2em; /* Adjust title font size */
   }
 
   .body-content {
     background-size: cover;
-    height: auto; /* Adjust content height */
+    height: 300px; /* Adjust content height */
     padding: 10px; /* Ensure content is not too close to edges */
   }
 }

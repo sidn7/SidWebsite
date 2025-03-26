@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   margin: 0;  /* Remove unwanted margins */
   padding: 0; /* Prevent extra spacing */
-  overflow-x: hidden; /* Avoid horizontal scrolling */
+  --overflow-x: hidden; /* Avoid horizontal scrolling */
 }
 
 /* Ensure app-root takes full width */

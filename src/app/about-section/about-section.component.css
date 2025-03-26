@@ -38,6 +38,13 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+.about-content{
+  background-size: cover;
+  width: 100%;
+
+}
+
   .about-section {
     text-align: center;
     background-size: cover;
@@ -49,10 +56,19 @@
 
 /* Responsive adjustments */
 @media (max-width: 480px) {
+
+  .about-content{
+    background-size: cover;
+    width: 100%;
+    height: auto; /* Allow content to adapt to content height */
+
+  }
   .about-section {
     flex-direction: column;
     text-align: center;
     width: 100%;
+    height: auto; /* Allow content to adapt to content height */
+
   }
 }
 
