@@ -12,22 +12,11 @@
 
 }
 
-.about-photo {
-  /* Set a fixed width for the photo container */
-  width: 120px; /* Adjust width as needed */
-  max-width: 150px;
 
-}
-
-.about-photo img {
-  width: 280px;  /* Make the image fill the container */
-  height: 430px;
-  background-image: url('../../assets/profile7.jpg');
-}
 
 .about-me {
   flex: 2;
-  margin-left:180px;
+  margin: 50px;
 }
 
 .about-me h2 {
