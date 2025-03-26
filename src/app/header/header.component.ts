@@ -24,6 +24,16 @@ export class HeaderComponent {
     }
   }
 
+  adjustBarScroll(section: string, event: Event) {
+    // Handle smooth scroll to section
+    event.preventDefault();
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+
+    if (this.menuOpen) {
+      this.toggleMenu(); // Close the menu
+    }
+  }
+
   adjustScroll(sectionId: string, event: Event) {
     event.preventDefault();
 
