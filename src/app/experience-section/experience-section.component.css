@@ -52,3 +52,28 @@
   font-size: 17px;
   color: #CCCCCC;
 }
+
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-top: 30px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-marker {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 10px;
+    max-width: 90%;
+  }
+}

@@ -123,3 +123,21 @@ footer {
   color: #CCCCCC;
 }
 
+
+@media (max-width: 768px) {
+  .container {
+    padding: 50px 15px;
+  }
+
+  .contact-box {
+    padding: 30px;
+  }
+
+  input, textarea, button {
+    width: 100%;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}

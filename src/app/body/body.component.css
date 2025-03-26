@@ -40,3 +40,40 @@ h1, h2 {
   transition: opacity 0.4s ease, transform 0.2s ease;
 }
 
+@media (max-width: 1024px) {
+  .name {
+    font-size: 1.8em; /* Adjust size for tablet or smaller screens */
+  }
+
+  .title {
+    font-size: 2.5em; /* Reduce title size on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 1.6em; /* Adjust size for tablets */
+  }
+
+  .title {
+    font-size: 2.2em; /* Further reduce title size for smaller tablets */
+  }
+
+  .centered-content {
+    height: auto; /* Allow centered content to adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.4em; /* Adjust for small mobile screens */
+  }
+
+  .title {
+    font-size: 1.8em; /* Adjust for smaller screens */
+  }
+
+  .body-content {
+    background-size: 150%; /* Increase background size for small screens */
+  }
+}

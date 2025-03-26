@@ -63,3 +63,22 @@ p {
   color: #CCCCCC;
   line-height: 1.5;
 }
+
+
+@media (max-width: 768px) {
+  .education-item {
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .education-year {
+    text-align: center;
+    min-width: auto;
+  }
+
+  .education-details {
+    text-align: center;
+  }
+}
