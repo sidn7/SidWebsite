@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   font-family: 'Arial', sans-serif;
   --background-color: #f8f9fa;
@@ -9,7 +10,6 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-
 }
 
 .container {
@@ -21,8 +21,6 @@ html, body {
   text-align: center;
   padding-top: 80px;
   --background: linear-gradient(to right, #f8f9fa, #e9ecef);
-
-
 }
 
 h2 {
@@ -102,7 +100,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: lack;
+  color: black;
 }
 
 .response-message {
@@ -124,14 +122,44 @@ footer {
   color: #CCCCCC;
 }
 
+/* Responsive Adjustments */
 
-@media (max-width: 768px) {
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
   .container {
-    padding: 30px 15px;
+    padding: 40px 20px;
   }
 
   .contact-box {
-    padding: 5px;
+    padding: 35px;
+  }
+
+  input, textarea, button {
+    width: 90%;
+  }
+
+  footer {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Adjusted heading size */
+  }
+
+  .social-links a {
+    font-size: 14px; /* Adjusted font size for social links */
+  }
+}
+
+/* Tablets and Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 15px;
+    background-size: cover;
+  }
+
+  .contact-box {
+    padding: 30px;
   }
 
   input, textarea, button {
@@ -141,15 +169,20 @@ footer {
   footer {
     padding: 15px;
   }
+
+  h2 {
+    font-size: 1.6rem; /* Adjusted heading size */
+  }
 }
 
+/* Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .container {
     padding: 10px 5px;
   }
 
   .contact-box {
-    padding: 5px;
+    padding: 20px;
   }
 
   input, textarea, button {
@@ -157,6 +190,14 @@ footer {
   }
 
   footer {
-    padding: 15px;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 1.4rem; /* Adjusted heading size */
+  }
+
+  .social-links a {
+    font-size: 12px; /* Adjusted font size for social links */
   }
 }

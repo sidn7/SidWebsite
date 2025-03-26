@@ -1,3 +1,4 @@
+/* Base Styles */
 .education-section {
   text-align: center;
 }
@@ -13,8 +14,8 @@
 .section-heading {
   color: #F96857;
   font-size: 35px;
-
 }
+
 .education-item {
   display: flex;
   align-items: center;
@@ -64,7 +65,9 @@ p {
   line-height: 1.5;
 }
 
+/* Responsive Adjustments */
 
+/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .education-item {
     flex-direction: column; /* Stack on smaller screens */
@@ -80,5 +83,56 @@ p {
 
   .education-details {
     text-align: center;
+  }
+
+  .section-heading {
+    font-size: 28px; /* Adjust section heading size */
+  }
+
+  .degree {
+    font-size: 18px; /* Reduce degree font size */
+  }
+
+  .university {
+    font-size: 13px; /* Reduce university font size */
+  }
+
+  p {
+    font-size: 14px; /* Reduce paragraph font size */
+  }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .education-item {
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .education-year {
+    text-align: center;
+    min-width: auto;
+  }
+
+  .education-details {
+    text-align: center;
+  }
+
+  .section-heading {
+    font-size: 24px; /* Adjust section heading size */
+  }
+
+  .degree {
+    font-size: 16px; /* Adjust degree font size */
+  }
+
+  .university {
+    font-size: 12px; /* Adjust university font size */
+  }
+
+  p {
+    font-size: 13px; /* Adjust paragraph font size */
   }
 }

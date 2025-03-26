@@ -1,6 +1,7 @@
-
+/* Base Styles */
 .about-content {
   margin: auto;
+  padding: 20px;
 }
 
 .about-section {
@@ -8,11 +9,8 @@
   --max-width: 1320px;
   margin: auto;
   transition: opacity 0.2s ease, transform 0.6s ease;
-
-
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-
-
 
 .about-me {
   flex: 2;
@@ -35,12 +33,58 @@
   color: #CCCCCC;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
+
+/* Tablet & smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
   .about-section {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center-align text */
+    background-size: cover; /* Ensure images are responsive */
+  }
+
+  .about-me {
+    margin: 20px 10px; /* Less margin for small screens */
+  }
+
+  .about-me h2 {
+    font-size: 1.5em; /* Adjust heading font size */
+  }
+
+  .about-me p {
+    font-size: 1em; /* Slightly reduce paragraph font size */
   }
 }
 
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-section {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center-align text */
+    padding: 10px;
+  }
 
+  .about-me {
+    margin: 15px; /* Further reduce margin for mobile */
+  }
+
+  .about-me h2 {
+    font-size: 1.3em; /* Adjust heading font size for mobile */
+  }
+
+  .about-me p {
+    font-size: 0.95em; /* Adjust paragraph font size for mobile */
+  }
+}
+
+/* Large Screen & Desktop */
+@media (min-width: 1025px) {
+  .about-section {
+    max-width: 1320px; /* Set a max-width for large screens */
+    justify-content: center;
+  }
+
+  .about-me {
+    margin: 50px; /* Larger margin on desktop */
+  }
+}

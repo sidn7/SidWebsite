@@ -1,3 +1,4 @@
+/* Base styles for the header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +22,7 @@
 .nav {
   display: flex;
   gap: 50px;
-  margin-left: 60%
+  margin-left: 60%;
 }
 
 .nav a {
@@ -41,7 +42,7 @@
   transform: translateY(-100%);
 }
 
-/* Mobile Navigation Toggle */
+/* Mobile Navigation Toggle Button */
 .menu-toggle {
   display: none; /* Hidden on larger screens */
   background: none;
@@ -52,13 +53,13 @@
 }
 
 @media (max-width: 1024px) {
+  /* Adjustments for tablets */
   .header {
     padding: 10px 50px;
   }
 
   .nav {
     gap: 30px;
-
   }
 
   .nav a {
@@ -67,6 +68,7 @@
 }
 
 @media (max-width: 768px) {
+  /* Adjustments for mobile devices */
   .header {
     padding: 10px 20px;
   }
@@ -84,7 +86,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
     text-align: center;
-    --padding: 20px 0;
+    padding: 20px 0;
   }
 
   .nav a {
@@ -97,13 +99,14 @@
     display: block; /* Show menu toggle button */
   }
 
-  /* Show menu when active */
+  /* Show menu when the class 'active' is added */
   .nav.active {
     display: flex;
   }
 }
 
 @media (max-width: 480px) {
+  /* Adjustments for small mobile screens */
   .name {
     font-size: 2.2em;
   }

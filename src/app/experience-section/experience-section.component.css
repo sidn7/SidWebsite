@@ -1,11 +1,10 @@
-/* work-experience.component.css */
+/* Base Styles */
 .work-experience-home {
   text-align: center;
   margin-top: 120px;
 }
 
 .section-heading {
-
   color: #F96857;
   font-size: 35px;
 }
@@ -37,9 +36,8 @@
 .timeline-content {
   padding-left: 30px;
   border-left: 2px solid #007bff;
-  font-size:18px;
+  font-size: 18px;
   color: #CCCCCC;
-
 }
 
 .work-year {
@@ -53,7 +51,51 @@
   color: #CCCCCC;
 }
 
+/* Responsive Adjustments */
 
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .timeline {
+    padding-top: 45px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px; /* Reduced space between items */
+  }
+
+  .timeline-marker {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 10px;
+    max-width: 100%;
+  }
+
+  .section-heading {
+    font-size: 32px; /* Adjusted section heading size */
+  }
+
+  .work-year {
+    font-size: 17px; /* Adjusted work year font size */
+  }
+
+  .title {
+    font-size: 16px; /* Adjusted title font size */
+  }
+
+  p {
+    font-size: 15px; /* Adjusted paragraph font size */
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
   .timeline {
     padding-top: 30px;
@@ -63,6 +105,49 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 40px; /* Reduced space between items */
+  }
+
+  .timeline-marker {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 10px;
+    max-width: 100%;
+  }
+
+  .section-heading {
+    font-size: 28px; /* Adjusted section heading size */
+  }
+
+  .work-year {
+    font-size: 16px; /* Reduced font size */
+  }
+
+  .title {
+    font-size: 15px; /* Adjusted title font size */
+  }
+
+  p {
+    font-size: 14px; /* Adjusted paragraph font size */
+  }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .timeline {
+    padding-top: 30px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px; /* Reduced space between items */
   }
 
   .timeline-marker {
@@ -75,5 +160,21 @@
     padding-left: 0;
     padding-top: 10px;
     max-width: 90%;
+  }
+
+  .section-heading {
+    font-size: 24px; /* Adjusted section heading size */
+  }
+
+  .work-year {
+    font-size: 14px; /* Adjusted work year font size */
+  }
+
+  .title {
+    font-size: 13px; /* Adjusted title font size */
+  }
+
+  p {
+    font-size: 12px; /* Adjusted paragraph font size */
   }
 }

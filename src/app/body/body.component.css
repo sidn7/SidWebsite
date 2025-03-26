@@ -1,3 +1,4 @@
+/* Base Styles */
 .body-content {
   height: 100vh;
   background-image: url('../../assets/image200.jpg');
@@ -38,45 +39,54 @@ h2, h3 {
   transition: opacity 0.4s ease, transform 0.2s ease;
 }
 
-/* Responsive Breakpoints */
+/* Responsive Adjustments */
 
+/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   .name {
-    font-size: 2.5vw;
+    font-size: 2.5vw; /* Adjust font size for tablets */
   }
 
   .title {
-    font-size: 4vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .name {
-    font-size: 2.2vw;
-  }
-
-  .title {
-    font-size: 3.5vw;
-  }
-
-  .centered-content {
-    height: auto;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .name {
-    font-size: 1.8em;
-  }
-
-  .title {
-    font-size: 2.5em;
+    font-size: 4vw; /* Adjust title font size */
   }
 
   .body-content {
-    background-size: 150%;
-    height: auto;
-    padding: 10px;
+    padding: 20px; /* Add padding for smaller screens */
+  }
+}
+
+/* Small Tablets & Landscape Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.2vw; /* Slightly smaller font size */
+  }
+
+  .title {
+    font-size: 3.5vw; /* Adjust title size */
+  }
+
+  .body-content {
+    background-size: cover;
+    width: 100%;
+    height: auto; /* Allow content to adapt to content height */
+    padding: 10px; /* Add padding to prevent content touching edges */
+  }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.8em; /* Fix font size for smaller mobile screens */
+  }
+
+  .title {
+    font-size: 2.5em; /* Adjust title font size */
+  }
+
+  .body-content {
+    background-size: cover;
+    height: auto; /* Adjust content height */
+    padding: 10px; /* Ensure content is not too close to edges */
   }
 }
