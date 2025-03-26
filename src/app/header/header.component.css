@@ -2,48 +2,118 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 140px;
-  --background-color: #fff;
-  color: #CCCCCC;
-  transition: transform 0.5s ease-in-out; /* Increase duration and use ease-in-out */
-  box-shadow: 100px 100px rgba(0, 0, 0, 0);
-  position:fixed;
-  --z-index: 1000; /* Keeps header above other content */
-
+  padding: 30px;
+  background-color: #F96857;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .name {
   font-size: 3.5em;
   font-weight: bold;
-  font-family: 'Great Vibes',cursive;
+  font-family: 'Great Vibes', cursive;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+  margin-left: 60%
 }
 
 .nav a {
-  margin-left: 155px;
   text-decoration: none;
-  font-size: 23px;
-  color: #CCCCCC;
+  font-size: 15px;
+  color: white;
   font-weight: bold;
-  transition: color 0.3s ease-in-out, opacity 1s ease, text-decoration 0.3s ease-in-out; /* Smooth transition for color and opacity */
-  opacity: 1;
+  transition: color 0.3s ease-in-out, opacity 1s ease;
 }
 
 .nav a:hover {
   color: black;
-  text-decoration: underline;
-  text-decoration-color: darkkhaki;
-  opacity: 0.4;
-}
-
-/* Dim the non-hovered links */
-.nav a:not(:hover) {
-  opacity: 1; /* Dim non-hovered links */
+  text-decoration-color: #007bff;
 }
 
 .hidden {
-  transform: translateY(-100%); /* Moves header out of view */
+  transform: translateY(-100%);
 }
 
-html {
-  scroll-behavior: smooth;
+/* Mobile Navigation Toggle */
+.menu-toggle {
+  display: none; /* Hidden on larger screens */
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 10px 50px;
+  }
+
+  .nav {
+    gap: 30px;
+
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .name {
+    font-size: 2.8em;
+  }
+
+  .nav {
+    display: none; /* Hide default nav */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 0
+  }
+
+  .nav a {
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    display: block; /* Show menu toggle button */
+  }
+
+  /* Show menu when active */
+  .nav.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 2.2em;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
 }

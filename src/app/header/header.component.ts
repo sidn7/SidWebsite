@@ -8,6 +8,7 @@ import { Component,HostListener} from '@angular/core';
 export class HeaderComponent {
 
   isScrolled = false;
+  menuOpen = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() : void{
@@ -15,6 +16,13 @@ export class HeaderComponent {
     this.isScrolled = window.scrollY > scrollThreshold;
   }
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    const nav = document.querySelector('.nav');
+    if (nav) {
+      nav.classList.toggle('active', this.menuOpen);
+    }
+  }
 
   adjustScroll(sectionId: string, event: Event) {
     event.preventDefault();

@@ -1,79 +1,82 @@
 .body-content {
-  height: 100vh; /* Set to full viewport height or desired height */
+  height: 100vh;
   background-image: url('../../assets/image200.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: opacity 1s ease; /* Smooth transition for background opacity */
+  transition: opacity 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Prevent content from touching screen edges */
 }
 
 .centered-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  height: 90vh; /* Full height of the viewport */
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   transition: opacity 0.3s ease;
-
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-
 .name {
-  font-size:1.4em; /* Adjust as needed */
-
+  font-size: 3vw; /* Scales based on viewport width */
   font-weight: bold;
   color: #CCCCCC;
 }
 
 .title {
-  font-size: 3.2em; /* Adjust as needed */
-  margin:25px 0 0 0; /* Adjust space between name and title */
+  font-size: 5vw; /* Scales dynamically */
+  margin: 20px 0 0 0;
   color: #CCCCCC;
-
 }
 
-h1, h2 {
+h2, h3 {
   transition: opacity 0.4s ease, transform 0.2s ease;
 }
 
+/* Responsive Breakpoints */
+
 @media (max-width: 1024px) {
   .name {
-    font-size: 1.8em; /* Adjust size for tablet or smaller screens */
+    font-size: 2.5vw;
   }
 
   .title {
-    font-size: 2.5em; /* Reduce title size on medium screens */
+    font-size: 4vw;
   }
 }
 
 @media (max-width: 768px) {
   .name {
-    font-size: 1.6em; /* Adjust size for tablets */
+    font-size: 2.2vw;
   }
 
   .title {
-    font-size: 2.2em; /* Further reduce title size for smaller tablets */
+    font-size: 3.5vw;
   }
 
   .centered-content {
-    height: auto; /* Allow centered content to adjust for smaller screens */
+    height: auto;
+    padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .name {
-    font-size: 1.4em; /* Adjust for small mobile screens */
+    font-size: 1.8em;
   }
 
   .title {
-    font-size: 1.8em; /* Adjust for smaller screens */
+    font-size: 2.5em;
   }
 
   .body-content {
-    background-size: 150%; /* Increase background size for small screens */
+    background-size: 150%;
+    height: auto;
+    padding: 10px;
   }
 }
