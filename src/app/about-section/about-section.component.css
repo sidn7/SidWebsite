@@ -5,7 +5,7 @@
 
 .about-section {
   display: flex;
-  max-width: 1320px;
+  --max-width: 1320px;
   margin: auto;
   transition: opacity 0.2s ease, transform 0.6s ease;
 
@@ -40,9 +40,6 @@
   .about-section {
     flex-direction: column;
     text-align: center;
-  }
-  .about-photo {
-    margin: 0 0 20px 0;
   }
 }
 

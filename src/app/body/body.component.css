@@ -24,7 +24,7 @@
 
 .name {
   font-size:1.4em; /* Adjust as needed */
-  --: 0; /* Remove default margin */
+
   font-weight: bold;
   color: #CCCCCC;
 }

@@ -1,18 +1,21 @@
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
+/* Ensure the full width is used */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;  /* Remove unwanted margins */
+  padding: 0; /* Prevent extra spacing */
+  --overflow-x: hidden; /* Avoid horizontal scrolling */
 }
 
-/* Responsive Grid Layout for all sections */
-.section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+/* Ensure app-root takes full width */
+app-root {
+  display: block;
+  width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .section {
-    grid-template-columns: 1fr;
-  }
+/* Keep padding for sections, but remove white space around the site */
+.container {
+  max-width: 1500px; /* Adjust this based on your design */
+  margin: auto; /* Center the content */
+  padding: 20px; /* Keep some spacing */
 }
