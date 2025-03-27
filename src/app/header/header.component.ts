@@ -1,9 +1,9 @@
-import { Component,HostListener} from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
 
@@ -11,12 +11,20 @@ export class HeaderComponent {
   menuOpen = false;
 
   @HostListener('window:scroll', [])
-  onWindowScroll() : void{
+  onWindowScroll(): void {
     const scrollThreshold = 150;
     this.isScrolled = window.scrollY > scrollThreshold;
   }
 
-  toggleMenu() {
+  @HostListener('document:click', ['$event'])
+  closeMenuOnClickOutside(event: MouseEvent): void {
+    const clickedInside = this.isClickInsideMenu(event);
+    if (!clickedInside && this.menuOpen) {
+      this.toggleMenu(); // Close the menu if clicked outside
+    }
+  }
+
+  toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
     const nav = document.querySelector('.nav');
     if (nav) {
@@ -24,8 +32,7 @@ export class HeaderComponent {
     }
   }
 
-  adjustBarScroll(section: string, event: Event) {
-    // Handle smooth scroll to section
+  adjustBarScroll(section: string, event: Event): void {
     event.preventDefault();
     document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
 
@@ -34,7 +41,7 @@ export class HeaderComponent {
     }
   }
 
-  adjustScroll(sectionId: string, event: Event) {
+  adjustScroll(sectionId: string, event: Event): void {
     event.preventDefault();
 
     const element = document.getElementById(sectionId);
@@ -43,5 +50,10 @@ export class HeaderComponent {
       const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
+  }
+
+  private isClickInsideMenu(event: MouseEvent): boolean {
+    const headerElement = document.querySelector('.header');
+    return headerElement ? headerElement.contains(event.target as Node) : false;
   }
 }

@@ -63,6 +63,13 @@
     height: auto; /* Allow content to adapt to content height */
 
   }
+
+  .about-me p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #CCCCCC;
+  }
+
   .about-section {
     flex-direction: column;
     text-align: center;

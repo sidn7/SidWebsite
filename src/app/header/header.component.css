@@ -53,17 +53,40 @@
 }
 
 @media (max-width: 1024px) {
-  /* Adjustments for tablets */
+  /* Adjustments for mobile devices */
   .header {
-    padding: 10px 50px;
+    padding: 10px 20px;
+  }
+
+  .name {
+    font-size: 2.8em;
   }
 
   .nav {
-    gap: 30px;
+    display: none; /* Hide default nav */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
   }
 
   .nav a {
-    font-size: 18px;
+    display: block;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .menu-toggle {
+    display: block; /* Show menu toggle button */
+  }
+
+  /* Show menu when the class 'active' is added */
+  .nav.active {
+    display: flex;
   }
 }
 
@@ -91,8 +114,8 @@
 
   .nav a {
     display: block;
-    padding: 15px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 10px;
   }
 
   .menu-toggle {

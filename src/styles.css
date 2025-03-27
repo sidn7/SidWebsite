@@ -19,3 +19,43 @@ app-root {
   margin: auto; /* Center the content */
   padding: 20px; /* Keep some spacing */
 }
+
+
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;  /* Remove unwanted margins */
+    padding: 0; /* Prevent extra spacing */
+    overflow-x: hidden; /* Avoid horizontal scrolling */
+  }
+
+  app-root {
+    display: block;
+    width: 100%;
+  }
+
+  /* Keep padding for secßtions, but remove white space around the site */
+
+
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for small mobile screens */
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;  /* Remove unwanted margins */
+    padding: 0; /* Prevent extra spacing */
+    overflow-x: hidden; /* Avoid horizontal scrolling */
+  }
+
+  app-root {
+    display: block;
+    width: 100%;
+  }
+
+  /* Keep padding for secßtions, but remove white space around the site */
+
+}
