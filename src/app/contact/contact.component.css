@@ -154,16 +154,16 @@ footer {
 /* Tablets and Small Screens (max-width: 768px) */
 @media (max-width: 768px) {
   .container {
-    padding: 30px 15px;
+    padding: 1px 1px;
     background-size: cover;
   }
 
   .contact-box {
-    padding: 30px;
+    padding: 2px;
   }
 
   input, textarea, button {
-    width: 100%;
+    width: 80%;
   }
 
   footer {
@@ -178,15 +178,15 @@ footer {
 /* Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .container {
-    padding: 10px 5px;
+    padding: 0px 0px;
   }
 
   .contact-box {
-    padding: 20px;
+    padding: 0px;
   }
 
   input, textarea, button {
-    width: 100%;
+    width: 70%;
   }
 
   footer {
@@ -194,7 +194,7 @@ footer {
   }
 
   h2 {
-    font-size: 1.4rem; /* Adjusted heading size */
+    font-size: 0.3rem; /* Adjusted heading size */
   }
 
   .social-links a {
