@@ -63,7 +63,7 @@
   }
 
   .nav {
-    display: none; /* Hide default nav */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -81,17 +81,16 @@
   }
 
   .menu-toggle {
-    display: block; /* Show menu toggle button */
+    display: block;
   }
 
-  /* Show menu when the class 'active' is added */
   .nav.active {
     display: flex;
   }
 }
 
 @media (max-width: 768px) {
-  /* Adjustments for mobile devices */
+
   .header {
     padding: 10px 20px;
   }
@@ -101,7 +100,7 @@
   }
 
   .nav {
-    display: none; /* Hide default nav */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -119,17 +118,17 @@
   }
 
   .menu-toggle {
-    display: block; /* Show menu toggle button */
+    display: block;
   }
 
-  /* Show menu when the class 'active' is added */
+
   .nav.active {
     display: flex;
   }
 }
 
 @media (max-width: 480px) {
-  /* Adjustments for small mobile screens */
+
   .name {
     font-size: 2.2em;
   }

@@ -34,13 +34,11 @@ export class ExperienceSectionComponent {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
-    // Get the current scroll position
+
     const scrollPosition = window.scrollY;
 
-    //this.opacity = Math.max(1 - scrollPosition / 2400, 0);
-
-    const translateYValue = Math.min(scrollPosition / 3, 8000);  // Max 100px movement
-    this.transform = `translateY(-${translateYValue}px)`; // Move up as you scroll
+    const translateYValue = Math.min(scrollPosition / 3, 8000);
+    this.transform = `translateY(-${translateYValue}px)`;
   }
 
 

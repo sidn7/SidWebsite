@@ -52,7 +52,7 @@ export class ContactComponent {
   }
 
   clearForm() {
-    // Clear the form fields after successful submission
+
     this.contact.name = '';
     this.contact.email = '';
     this.contact.message = '';

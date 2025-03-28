@@ -20,7 +20,7 @@ export class HeaderComponent {
   closeMenuOnClickOutside(event: MouseEvent): void {
     const clickedInside = this.isClickInsideMenu(event);
     if (!clickedInside && this.menuOpen) {
-      this.toggleMenu(); // Close the menu if clicked outside
+      this.toggleMenu();
     }
   }
 
@@ -37,7 +37,7 @@ export class HeaderComponent {
     document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
 
     if (this.menuOpen) {
-      this.toggleMenu(); // Close the menu
+      this.toggleMenu();
     }
   }
 

@@ -1,23 +1,22 @@
-/* Ensure the full width is used */
+
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0;  /* Remove unwanted margins */
-  padding: 0; /* Prevent extra spacing */
-  --overflow-x: hidden; /* Avoid horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  --overflow-x: hidden;
 }
 
-/* Ensure app-root takes full width */
+
 app-root {
   display: block;
   width: 100%;
 }
 
-/* Keep padding for secßtions, but remove white space around the site */
 .container {
-  max-width: 1500px; /* Adjust this based on your design */
-  margin: auto; /* Center the content */
-  padding: 20px; /* Keep some spacing */
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
 }
 
 
@@ -26,36 +25,31 @@ app-root {
   html, body {
     width: 100%;
     height: 100%;
-    margin: 0;  /* Remove unwanted margins */
-    padding: 0; /* Prevent extra spacing */
-    overflow-x: hidden; /* Avoid horizontal scrolling */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   app-root {
     display: block;
     width: 100%;
   }
-
-  /* Keep padding for secßtions, but remove white space around the site */
-
 
 }
 
 @media (max-width: 480px) {
-  /* Adjustments for small mobile screens */
+
   html, body {
     width: 100%;
     height: 100%;
-    margin: 0;  /* Remove unwanted margins */
-    padding: 0; /* Prevent extra spacing */
-    overflow-x: hidden; /* Avoid horizontal scrolling */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   app-root {
     display: block;
     width: 100%;
   }
-
-  /* Keep padding for secßtions, but remove white space around the site */
 
 }

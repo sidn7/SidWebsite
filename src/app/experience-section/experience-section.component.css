@@ -55,9 +55,7 @@
   color: #CCCCCC;
 }
 
-/* Responsive Adjustments */
 
-/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   .timeline {
     padding-top: 45px;
@@ -67,7 +65,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px; /* Reduced space between items */
+    margin-bottom: 50px;
   }
 
   .timeline-marker {
@@ -88,23 +86,23 @@
   }
 
   .section-heading {
-    font-size: 32px; /* Adjusted section heading size */
+    font-size: 32px;
   }
 
   .work-year {
-    font-size: 17px; /* Adjusted work year font size */
+    font-size: 17px;
   }
 
   .title {
-    font-size: 16px; /* Adjusted title font size */
+    font-size: 16px;
   }
 
   p {
-    font-size: 15px; /* Adjusted paragraph font size */
+    font-size: 15px;
   }
 }
 
-/* Mobile Devices (max-width: 768px) */
+
 @media (max-width: 768px) {
   .timeline {
     padding-top: 30px;
@@ -114,7 +112,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 40px; /* Reduced space between items */
+    margin-bottom: 40px;
   }
 
   .company {
@@ -135,23 +133,22 @@
   }
 
   .section-heading {
-    font-size: 1.1em; /* Adjusted section heading size */
+    font-size: 1.1em;
   }
 
   .work-year {
-    font-size: 18px; /* Reduced font size */
+    font-size: 18px;
   }
 
   .title {
-    font-size: 16px; /* Adjusted title font size */
+    font-size: 16px;
   }
 
   p {
-    font-size: 17px; /* Adjusted paragraph font size */
+    font-size: 17px;
   }
 }
 
-/* Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .timeline {
     padding-top: 30px;
@@ -161,7 +158,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 30px; /* Reduced space between items */
+    margin-bottom: 30px;
   }
 
   .timeline-marker {
@@ -177,7 +174,7 @@
   }
 
   .section-heading {
-    font-size: 1.1em; /* Adjusted section heading size */
+    font-size: 1.1em;
   }
 
   .company {
@@ -186,14 +183,14 @@
   }
 
   .work-year {
-    font-size: 16px; /* Adjusted work year font size */
+    font-size: 16px;
   }
 
   .title {
-    font-size: 14px; /* Adjusted title font size */
+    font-size: 14px;
   }
 
   p {
-    font-size: 15px; /* Adjusted paragraph font size */
+    font-size: 15px;
   }
 }
