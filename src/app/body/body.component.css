@@ -10,6 +10,18 @@
   justify-content: center;
   align-items: center;
   padding: 0 20px; /* Prevent content from touching screen edges */
+  animation: parallax 10s infinite linear;
+}
+@keyframes parallax {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center bottom;
+  }
+  100% {
+    background-position: center top;
+  }
 }
 
 .fas.fa-robot {
@@ -91,6 +103,7 @@ h2, h3 {
 
   .body-content {
     background-size:cover;
+    animation: parallax 10s infinite linear;
     height: 700px; /* Adjust content height */
     padding: 10px; /* Ensure content is not too close to edges */
   }
