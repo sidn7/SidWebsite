@@ -165,13 +165,18 @@ footer {
     border: 0.2px solid #ccc;
   }
 
+  p {
+    font-size: 14px;
+    color: white;
+
+  }
 
   footer {
     padding: 15px;
   }
 
   h2 {
-    font-size: 20px; /* Adjusted heading size */
+    font-size: 1.6em; /* Adjusted heading size */
   }
 }
 
@@ -179,7 +184,7 @@ footer {
 @media (max-width: 480px) {
 
   input, textarea, button {
-    width: 70%;
+    width: 100%;
   }
 
 
@@ -197,8 +202,14 @@ footer {
     padding: 5px;
   }
 
+  p {
+    font-size: 13px;
+    color: white;
+
+  }
+
   h2 {
-    font-size: 16px; /* Adjusted heading size */
+    font-size: 1.1em; /* Adjusted heading size */
   }
 
   .social-links a {

@@ -86,7 +86,7 @@ p {
   }
 
   .section-heading {
-    font-size: 28px; /* Adjust section heading size */
+    font-size: 1.1em; /* Adjust section heading size */
   }
 
   .degree {
@@ -94,11 +94,11 @@ p {
   }
 
   .university {
-    font-size: 13px; /* Reduce university font size */
+    font-size: 15px; /* Reduce university font size */
   }
 
   p {
-    font-size: 14px; /* Reduce paragraph font size */
+    font-size: 17px; /* Reduce paragraph font size */
   }
 }
 
@@ -122,7 +122,7 @@ p {
   }
 
   .section-heading {
-    font-size: 24px; /* Adjust section heading size */
+    font-size: 1.1em /* Adjust section heading size */
   }
 
   .degree {
@@ -130,10 +130,10 @@ p {
   }
 
   .university {
-    font-size: 12px; /* Adjust university font size */
+    font-size: 13px; /* Adjust university font size */
   }
 
   p {
-    font-size: 13px; /* Adjust paragraph font size */
+    font-size: 15px; /* Adjust paragraph font size */
   }
 }
