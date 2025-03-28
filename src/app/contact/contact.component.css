@@ -130,10 +130,6 @@ footer {
     padding: 40px 20px;
   }
 
-  .contact-box {
-    padding: 35px;
-  }
-
   input, textarea, button {
     width: 90%;
   }
@@ -153,48 +149,56 @@ footer {
 
 /* Tablets and Small Screens (max-width: 768px) */
 @media (max-width: 768px) {
-  .container {
-    padding: 1px 1px;
-    background-size: cover;
-  }
-
-  .contact-box {
-    padding: 2px;
-  }
 
   input, textarea, button {
     width: 80%;
   }
+
+
+  .contact-box {
+    --background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 350px;
+    border: 0.2px solid #ccc;
+  }
+
 
   footer {
     padding: 15px;
   }
 
   h2 {
-    font-size: 1.6rem; /* Adjusted heading size */
+    font-size: 20px; /* Adjusted heading size */
   }
 }
 
 /* Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
-  .container {
-    padding: 0px 0px;
-  }
-
-  .contact-box {
-    padding: 0px;
-  }
 
   input, textarea, button {
     width: 70%;
   }
+
+
+.contact-box {
+  --background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  max-width: 200px;
+  border: 0.2px solid #ccc;
+}
 
   footer {
     padding: 5px;
   }
 
   h2 {
-    font-size: 0.3rem; /* Adjusted heading size */
+    font-size: 16px; /* Adjusted heading size */
   }
 
   .social-links a {

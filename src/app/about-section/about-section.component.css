@@ -12,9 +12,6 @@
 
 
 }
-
-
-
 .about-me {
   flex: 2;
   margin: 50px;
@@ -34,6 +31,7 @@
   font-size: 1.1em;
   line-height: 1.6;
   color: #CCCCCC;
+
 }
 
 /* Responsive adjustments */
