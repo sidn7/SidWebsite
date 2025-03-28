@@ -12,6 +12,11 @@
   padding: 0 20px; /* Prevent content from touching screen edges */
 }
 
+.fas.fa-robot {
+  font-size: 5vw;
+  color: #F96857
+}
+
 .centered-content {
   display: flex;
   flex-direction: column;

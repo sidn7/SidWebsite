@@ -1,9 +1,9 @@
 <header class="header" [ngClass]="{ 'hidden': isScrolled }">
   <nav class="nav" [ngClass]="{ 'active': menuOpen }">
-    <a href="#about" (click)="adjustBarScroll('about', $event)">ABOUT</a>
-    <a href="#education" (click)="adjustBarScroll('education', $event)">EDUCATION</a>
-    <a href="#experience" (click)="adjustBarScroll('experience', $event)">EXPERIENCE</a>
-    <a href="#contact" (click)="adjustBarScroll('contact', $event)">CONTACT</a>
+    <a href="#about" (click)="adjustBarScroll('about', $event)"><i class="fas fa-user-circle"></i> ABOUT</a>
+    <a href="#education" (click)="adjustBarScroll('education', $event)"><i class="fas fa-graduation-cap"></i> EDUCATION</a>
+    <a href="#experience" (click)="adjustBarScroll('experience', $event)"><i class="fas fa-laptop-code"></i> EXPERIENCE</a>
+    <a href="#contact" (click)="adjustBarScroll('contact', $event)"><i class="fas fa-comment-dots"></i> CONTACT</a>
   </nav>
 
   <button class="menu-toggle" (click)="toggleMenu()">☰</button>
