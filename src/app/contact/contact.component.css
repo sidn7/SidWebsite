@@ -151,7 +151,7 @@ footer {
 @media (max-width: 768px) {
 
   input, textarea, button {
-    width: 80%;
+    width: 90%;
   }
 
 
@@ -184,7 +184,7 @@ footer {
 @media (max-width: 480px) {
 
   input, textarea, button {
-    width: 80%;
+    width: 90%;
   }
 
 
@@ -199,7 +199,7 @@ footer {
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
   color: white;
 
 }
@@ -213,6 +213,6 @@ p {
   }
 
   .social-links a {
-    font-size: 12px; /* Adjusted font size for social links */
+    font-size: 14px; /* Adjusted font size for social links */
   }
 }
