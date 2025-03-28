@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 20px; /* Prevent content from touching screen edges */
-  animation: parallax 10s infinite linear;
+  animation: parallax 7s infinite linear;
 }
 @keyframes parallax {
   0% {
@@ -83,6 +83,11 @@ h2, h3 {
     font-size: 2.5em; /* Adjust title size */
   }
 
+  .fas.fa-robot {
+
+    font-size: 11vw;
+  }
+
   .body-content {
     background-size: cover;
     width: 100%;
@@ -101,10 +106,17 @@ h2, h3 {
     font-size: 1.6em; /* Adjust title font size */
   }
 
+  .fas.fa-robot {
+
+    font-size: 12vw;
+  }
   .body-content {
     background-size:cover;
     animation: parallax 10s infinite linear;
     height: 700px; /* Adjust content height */
     padding: 10px; /* Ensure content is not too close to edges */
   }
+
+
+
 }
