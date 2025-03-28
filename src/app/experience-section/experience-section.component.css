@@ -9,6 +9,10 @@
   font-size: 35px;
 }
 
+.company {
+
+  font-size: 15px;
+}
 .timeline {
   padding-top: 60px;
   position: relative;
@@ -47,7 +51,7 @@
 }
 
 .title {
-  font-size: 17px;
+  font-size: 18px;
   color: #CCCCCC;
 }
 
@@ -76,6 +80,11 @@
     padding-left: 0;
     padding-top: 10px;
     max-width: 100%;
+  }
+
+  .company {
+
+    font-size: 15px;
   }
 
   .section-heading {
@@ -108,9 +117,14 @@
     margin-bottom: 40px; /* Reduced space between items */
   }
 
+  .company {
+
+    font-size: 15px;
+  }
+
   .timeline-marker {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .timeline-content {
@@ -129,7 +143,7 @@
   }
 
   .title {
-    font-size: 15px; /* Adjusted title font size */
+    font-size: 16px; /* Adjusted title font size */
   }
 
   p {
@@ -166,12 +180,17 @@
     font-size: 1.1em; /* Adjusted section heading size */
   }
 
+  .company {
+
+    font-size: 13px;
+  }
+
   .work-year {
     font-size: 16px; /* Adjusted work year font size */
   }
 
   .title {
-    font-size: 13px; /* Adjusted title font size */
+    font-size: 14px; /* Adjusted title font size */
   }
 
   p {

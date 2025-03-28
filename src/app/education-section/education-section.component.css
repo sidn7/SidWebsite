@@ -46,7 +46,7 @@
 }
 
 .university {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   color: #CCCCCC;
   white-space: nowrap; /* Prevents university name from wrapping */
@@ -94,7 +94,7 @@ p {
   }
 
   .university {
-    font-size: 15px; /* Reduce university font size */
+    font-size: 16px; /* Reduce university font size */
   }
 
   p {
@@ -130,7 +130,7 @@ p {
   }
 
   .university {
-    font-size: 13px; /* Adjust university font size */
+    font-size: 14px; /* Adjust university font size */
   }
 
   p {
