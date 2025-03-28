@@ -184,7 +184,7 @@ footer {
 @media (max-width: 480px) {
 
   input, textarea, button {
-    width: 100%;
+    width: 80%;
   }
 
 
